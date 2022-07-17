@@ -1,13 +1,14 @@
-# Sample Hardhat Project
+# Staking contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Контракт для стейка нативных токенов для EVM блокчейнов. 
 
-Try running some of the following tasks:
+### Методы: 
+ - setParams - оунер задает процент награды для стейка для определенной отрезка времени. Если передается существующий отрезок времени для стейка и 0 в качестве награды, то этот перииод становиться неактивным.
+ - getDepositeInfo - вывод инфы о стейке. 
+ - createDeposit - для создания стейка, входящий параметр время в минутах.
+ - withdrawDeposit - для вывода стейка
 
 ```shell
-npx hardhat help
+npx i
 npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
 ```
